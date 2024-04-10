@@ -88,11 +88,11 @@ function App() {
         <div className="operation-buttons">
           <div className="w-100">
             <p>Set Pen Color</p>
-            <input type="color" value='#000000' name="pen-color" onChange={(e) => setPenColor(e.target.value)} />
+            <input type="color" value={penColor} name="pen-color" onChange={(e) => setPenColor(e.target.value)} />
           </div>
           <div className="w-100">
             <p>Set Background Color</p>
-            <input type="color" value='#ffffff' name="background-color" onChange={(e) => setBackgroundColor(e.target.value)} />
+            <input type="color" value={backgroundColor} name="background-color" onChange={(e) => setBackgroundColor(e.target.value)} />
           </div>
         </div>
         <ReactSignatureCanvas
