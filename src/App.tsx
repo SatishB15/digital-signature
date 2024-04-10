@@ -87,11 +87,11 @@ function App() {
         </span>
         <div className="operation-buttons">
           <div className="w-100">
-            <p>Set Pen Color</p>
+            <p className="label">Set Pen Color</p>
             <input type="color" value={penColor} name="pen-color" onChange={(e) => setPenColor(e.target.value)} />
           </div>
           <div className="w-100">
-            <p>Set Background Color</p>
+            <p className="label">Set Background Color</p>
             <input type="color" value={backgroundColor} name="background-color" onChange={(e) => setBackgroundColor(e.target.value)} />
           </div>
         </div>
@@ -112,7 +112,7 @@ function App() {
             accept="image/png"
             style={{ display: 'none' }}
           />
-          <button className='update-button' type="button" onClick={handleFileUploadButtonClick}>Retrive Sign</button>
+          <button className='update-button' type="button" onClick={handleFileUploadButtonClick}>Upload</button>
           <button className='clear-button' type="button" onClick={clearCanvas}>Clear</button>
         </div>
       </main>
